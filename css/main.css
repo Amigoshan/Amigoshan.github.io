@@ -48,7 +48,7 @@ aside { padding: 50px 0; }
   .navbar-default.affix .nav > li > a, .navbar-default.affix .nav > li > a:focus { color: #222; }
   .navbar-default.affix .nav > li > a:hover, .navbar-default.affix .nav > li > a:focus:hover { color: #333; } }
 
-header { position: relative; width: 100%; min-height: auto; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; background-position: center; background-repeat:no-repeat; background-image: url("../image/main_dl.jpg"); text-align: center; color: white; }
+header { position: relative; width: 100%; min-height: auto; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; background-position: center; background-repeat:no-repeat; background-image: url("../image/main_dl2.jpg"); text-align: center; color: white; }
 header .header-content { position: relative; text-align: center; text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7); padding: 100px 15px 100px; width: 100%; }
 header .header-content .header-content-inner h1 { font-weight: 700; text-transform: uppercase; margin-top: 0; margin-bottom: 0; }
 header .header-content .header-content-inner h2 { padding-top: 75px; }
