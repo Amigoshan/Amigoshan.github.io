@@ -1,0 +1,18 @@
+# Site settings
+title: Wenshan's Website
+email: shanshan1370@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Welcome to Wenshan's website. 
+  You can find her latest research interests and some drivels as well.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://wangwenshan.com" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username:  jekyll
+favicon: "image/ico_brain.ico"
+
+# Build settings
+markdown: kramdown
+
+
+comments: true
+disqus-shortname: "www-wangwenshan-com"
