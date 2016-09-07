@@ -1,334 +1,289 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
+//
+// IMPORTS
+//
 
+@import "reset";
+@import "variables";
+// Syntax highlighting @import is at the bottom of this file
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+/**************/
+/* BASE RULES */
+/**************/
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
-
-// ================
-// from personal-jekyll-theme
-
-// Main color
-$primary-color: #000;
-// Anchor color
-$secondary-color: #00cdff;
-
-$font-color: #fff;
-$navbar-text-shadow: true;
-$header-text-shadow: true;
-$header-background-color: $primary-color;
-$intro-text-color: $font-color;
-$navbar-color: $font-color;
-$navbar-lg-collapse-background-color: $header-background-color;
-$navbar-lg-background: transparent;
-$navbar-sm-background-color: $navbar-lg-collapse-background-color;
-
-$social-buttons-color: $secondary-color;
-
-
-.intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: $intro-text-color;
-    {% if site.background-img %}
-    background: url({{ site.background-img }}) no-repeat bottom center scroll;
-    {% endif %}
-    background-color: $header-background-color;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    .intro-body {
-        display: table-cell;
-        vertical-align: middle;
-        .brand-heading {
-            font-size: 40px;
-        }
-        .intro-text {
-            font-size: 18px;
-            @if $navbar-text-shadow {
-                text-shadow: 1px 0 1px #000;
-            }
-        }
-    }
-    @media(min-width:768px) {
-        height: 100%;
-        padding: 0;
-        .intro-body {
-            .brand-heading {
-                font-size: 100px;
-            }
-            .intro-text {
-                font-size: 26px;
-            }
-        }
-    }
-}
-
-
-.content-section {
-    margin-top: 100px;
-    padding-top: 100px;
-    @media(min-width:767px) {
-        margin-top: 125px;
-        padding-top: 125px;
-    }
-    /* Added in { Personal } for responsive images in posts and section contents */
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-        border: 1px solid $font-color;
-    }
-    /* Added in { Personal } */
-    ul,
-    ol {
-        text-align: center;
-        margin: 0 0 25px;
-        font-size: 18px;
-        line-height: 1.5;
-        list-style-position: inside;
-    }
-    pre {
-      padding: 0;
-      > code {
-        text-align: left;
-      }
-    }
-    img.emoji {
-      /* Override any img styles to ensure Emojis are displayed inline */
-      margin: 0px !important;
-      display: inline !important;
-      border: 1px solid $primary-color !important;
-    }
-
-    /* Added in { Personal } */
-    &#post {
-        div.author img {
-            border: 0px;
-            margin-bottom: 20px;
-            padding: 4px;
-        }
-    }
-}
-
-
-.btn {
-    border-radius: 0;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.btn-default {
-    border: 1px solid $secondary-color;
-    color: $secondary-color;
-    background-color: transparent;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid $secondary-color;
-    outline: 0;
-    color: #000;
-    background-color: $secondary-color;
-}
-
-/* Added in { Personal } */
-ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    outline: 0;
-    color: $social-buttons-color;
-    background-color: #222;
-
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-
-    &:hover,
-    &:focus,
-    &:active {
-        color: #222;
-        background-color: darken($social-buttons-color, 10%);
-    }
-}
-
-footer {
-    padding: 50px 0;
-    text-align: center;
-    p {
-        margin: 0;
-    }
-}
-
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba($font-color, 0.2);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba($font-color, 0.2);
-}
-
-img::selection {
-    background: transparent;
-}
-
-img::-moz-selection {
-    background: transparent;
+html {
+  font-size: 100%;
 }
 
 body {
-    -webkit-tap-highlight-color: rgba($font-color, 0.2);
+	background: $white;
+  font: 18px/1.4 $helvetica;
+  color: $darkGray;
 }
 
-/* Added in { Personal } for Typed Cursor in Header */
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $helveticaNeue;
+  color: $darkerGray;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+h1 {
+  font-size: 30px;
+  a {
+    color: inherit;
+  }
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  color: $gray;
+}
+
+p {
+  margin: 15px 0;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $blue;
+  }
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+.date {
+  font-style: italic;
+  color: $gray;
+}
+
+// Specify the color of the selection
+::-moz-selection {
+  color: $black;
+  background: $lightGray;
+}
+::selection {
+  color: $black;
+  background: $lightGray;
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+//
+// .masthead
+//
+
+.wrapper-masthead {
+  margin-bottom: 50px;
+}
+
+.masthead {
+  padding: 20px 0;
+  border-bottom: 1px solid $lightGray;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.site-avatar {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.site-info {
+  float: left;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: -10px 0 0 0;
+  color: $darkGray;
+  cursor: pointer;
+  font-family: $helveticaNeue;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: $gray;
+  font-size: 15px;
+  max-width: 450px;
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+nav {
+  float: right;
+  margin-top: 47px; // @TODO: Vertically middle align
+  font-family: $helveticaNeue;
+  font-size: 18px;
+
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
     font-size: 16px;
-    vertical-align: top;
-    @media(min-width:768px) {
-        font-size: 22px;
+  }
+
+  a {
+    margin-left: 20px;
+    color: $darkGray;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include mobile {
+      margin: 0 10px;
+      color: $blue;
     }
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-/* END Added in { Personal } for Typed Cursor in Header */
-
-/* Animation for hand-swipe */
-@-webkit-keyframes swipe {
-    from {
-        left: 5%;
-    }
-     to {
-         left: -5%;
-     }
- }
-
- @-moz-keyframes swipe {
-     from {
-         left: 5%;
-     }
-     to {
-         left: -5%;
-     }
- }
- /* END Animation for hand-swipe */
-
- /* Style for swipe instruction section */
- #swipe-instruction {
-     display: none;
-     position: absolute;
-     background-color: rgba(0, 0, 0, 0.5);
-     width: 100%;
-     min-height: 100%;
-     top: 0;
-     right: 0;
-     left: 0;
-     z-index: 1;
-      > div {
-         background-color: rgba(20, 20, 20, 0.6);
-         padding: 10px;
-         @media(min-width:768px) {
-           padding: 20px 0;
-         }
-         #hand-swipe {
-            @media(min-width:992px) {
-              font-size: 100px;
-            }
-            font-size: 80px;
-             display: block;
-             position: relative;
-             animation: swipe ease-in-out 1s alternate infinite;
-         }
-     }
- }
-
-.ok-btn {
-  background-color: $primary-color;
-  color: $secondary-color;
+  }
 }
 
- /* END Style for swipe instruction section */
+//
+// .main
+//
 
-.fourofour {
-  border: 1px solid $primary-color !important;
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
 }
 
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
 
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $lightGray;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";

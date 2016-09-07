@@ -1,13 +1,32 @@
 <header class="site-header">
 
-  <div class="wrapper">
+  <!-- <div class="wrapper">
 
     <div style="width:120px; height:120px; border-radius:50%; overflow:hidden;">
-      <!-- <img src="{{site.baseurl}}{{ site.me-img }}"  alt="logo" /> -->
+      <img src="{{site.baseurl}}{{ site.me-img }}"  alt="logo" />
       <img src="{{site.baseurl}}/{{ site.me-img }}"  alt="logo" />
-   </div>
+   </div> -->
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
-   <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <div class="wrapper-masthead">
+    <div class="container">
+      <header class="masthead clearfix">
+        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{site.baseurl}}/{{ site.me-img }}" /></a>
+
+        <div class="site-info">
+          <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+          <p class="site-description">{{ site.description }}</p>
+        </div>
+
+        <nav>
+          <a href="{{ site.baseurl }}/blog">Blog</a>
+          <a href="{{ site.baseurl }}/about">About</a>
+        </nav>
+      </header>
+    </div>
+  </div>
+
+  <!--  <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
  
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -26,7 +45,7 @@
         {% endfor %}
       </div>
       
-    </nav>
+    </nav> -->
 
   </div>
 
