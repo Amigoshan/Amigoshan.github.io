@@ -447,3 +447,212 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .intro .intro-body {
+    display: table-cell;
+    vertical-align: middle; }
+    .intro .intro-body .brand-heading {
+      font-size: 40px; }
+    .intro .intro-body .intro-text {
+      font-size: 18px;
+      text-shadow: 1px 0 1px #000; }
+  @media (min-width: 768px) {
+    .intro {
+      height: 100%;
+      padding: 0; }
+      .intro .intro-body .brand-heading {
+        font-size: 100px; }
+      .intro .intro-body .intro-text {
+        font-size: 26px; } }
+
+.content-section {
+  margin-top: 100px;
+  padding-top: 100px;
+  /* Added in { Personal } for responsive images in posts and section contents */
+  /* Added in { Personal } */
+  /* Added in { Personal } */ }
+  @media (min-width: 767px) {
+    .content-section {
+      margin-top: 125px;
+      padding-top: 125px; } }
+  .content-section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #fff; }
+  .content-section ul,
+  .content-section ol {
+    text-align: center;
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+    list-style-position: inside; }
+  .content-section pre {
+    padding: 0; }
+    .content-section pre > code {
+      text-align: left; }
+  .content-section img.emoji {
+    /* Override any img styles to ensure Emojis are displayed inline */
+    margin: 0px !important;
+    display: inline !important;
+    border: 1px solid #000 !important; }
+  .content-section#post div.author img {
+    border: 0px;
+    margin-bottom: 20px;
+    padding: 4px; }
+
+.btn {
+  border-radius: 0;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.btn-default {
+  border: 1px solid #00cdff;
+  color: #00cdff;
+  background-color: transparent; }
+
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #00cdff;
+  outline: 0;
+  color: #000;
+  background-color: #00cdff; }
+
+/* Added in { Personal } */
+ul.social-buttons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  outline: 0;
+  color: #00cdff;
+  background-color: #222;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s; }
+  ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+    color: #222;
+    background-color: #00a4cc; }
+
+footer {
+  padding: 50px 0;
+  text-align: center; }
+  footer p {
+    margin: 0; }
+
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2); }
+
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2); }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+
+/* Added in { Personal } for Typed Cursor in Header */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  font-size: 16px;
+  vertical-align: top; }
+  @media (min-width: 768px) {
+    .typed-cursor {
+      font-size: 22px; } }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* END Added in { Personal } for Typed Cursor in Header */
+/* Animation for hand-swipe */
+@-webkit-keyframes swipe {
+  from {
+    left: 5%; }
+  to {
+    left: -5%; } }
+@-moz-keyframes swipe {
+  from {
+    left: 5%; }
+  to {
+    left: -5%; } }
+/* END Animation for hand-swipe */
+/* Style for swipe instruction section */
+#swipe-instruction {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1; }
+  #swipe-instruction > div {
+    background-color: rgba(20, 20, 20, 0.6);
+    padding: 10px; }
+    @media (min-width: 768px) {
+      #swipe-instruction > div {
+        padding: 20px 0; } }
+    #swipe-instruction > div #hand-swipe {
+      font-size: 80px;
+      display: block;
+      position: relative;
+      animation: swipe ease-in-out 1s alternate infinite; }
+      @media (min-width: 992px) {
+        #swipe-instruction > div #hand-swipe {
+          font-size: 100px; } }
+
+.ok-btn {
+  background-color: #000;
+  color: #00cdff; }
+
+/* END Style for swipe instruction section */
+.fourofour {
+  border: 1px solid #000 !important; }

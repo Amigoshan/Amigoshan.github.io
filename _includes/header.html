@@ -2,8 +2,13 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <div style="width:120px; height:120px; border-radius:50%; overflow:hidden;">
+      <!-- <img src="{{site.baseurl}}{{ site.me-img }}"  alt="logo" /> -->
+      <img src="{{site.baseurl}}/{{ site.me-img }}"  alt="logo" />
+   </div>
 
+   <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+ 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -20,6 +25,7 @@
           {% endif %}
         {% endfor %}
       </div>
+      
     </nav>
 
   </div>
