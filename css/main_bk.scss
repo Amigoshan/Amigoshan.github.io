@@ -7,13 +7,10 @@
 
 @import "reset";
 @import "variables";
+// Syntax highlighting @import is at the bottom of this file
 
 html {
   font-size: 100%;
-  margin: 0 auto;
-  max-width: 730px;
-  padding: 0 10px;
-  width: 100%;
 }
 
 body {
@@ -22,6 +19,12 @@ body {
   color: $darkGray;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
@@ -103,6 +106,25 @@ img {
   max-width: 100%;
 }
 
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+.date {
+  font-style: italic;
+  color: $gray;
+}
+
+// Specify the color of the selection
+::-moz-selection {
+  color: $black;
+  background: $lightGray;
+}
+::selection {
+  color: $black;
+  background: $lightGray;
+}
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
@@ -120,14 +142,17 @@ img {
 /* LAYOUT / SECTIONS */
 /*********************/
 
+//
+// .masthead
+//
 
-.wrapper-sitehead {
-  margin-bottom: 20px;
+.wrapper-masthead {
+  margin-bottom: 50px;
 }
 
-.sitehead {
+.masthead {
   padding: 20px 0;
-  border-bottom: 2px solid $lightGray;
+  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
