@@ -3,15 +3,33 @@ layout: default
 ---
 
 <div class="home">
-  <p>I have an obsessive interest in understanding intelligence. My research interests is on reinforcement learning and deep neural nets. I'd like to develop an end to end algorithm for robot perception, control and actuation based on reinforcement deep neural nets.  </p>
+  <div class="sidebar">
+      {% include navigation.html %}
+  </div>
 
-  {% include educations.html %}
+  <div class="preamble"><p>I have an obsessive interest in understanding intelligence. My research interests is on reinforcement learning and deep neural networks. I'd like to develop an end to end algorithm for robot perception, control and actuation based on reinforcement deep neural nets.  </p> </div>
+  <div class="supporting">
+    <div class="odd">
+      {% include educations.html %}
+    </div>
+    <div class="even">
+      <div class="even-wrapper">
+      {% include projects.html %}
+    </div>
+    </div>
+    <div class="odd">
+      {% include publications.html %}
+    </div>
+    <div class="even">
+      <div class="even-wrapper">
+      {% include rewards.html %}
+     </div>
+   </div>
+  </div>
 
-  {% include projects.html %}
-
-  {% include publications.html %}
-
-  {% include rewards.html %}
+  <div class="epilogue">
+      <p>For more information, please contact me by <a href="mailto:amigo@sjtu.edu.cn">email</a></p>
+  </div>
 
  <!--  <ul class="post-list">
     {% for post in site.posts %}
@@ -25,6 +43,6 @@ layout: default
     {% endfor %}
   </ul> -->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p-->
 
 </div>

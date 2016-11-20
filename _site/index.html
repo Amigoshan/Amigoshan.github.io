@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+  <!-- <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>Wenshan's Website</title>
+  <title>Wenshan Wang</title>
   <meta name="description" content="Welcome to Wenshan's website.  You can find her latest research interests and some drivels as well.
 ">
+  <meta name="author" content="Amigo">
+  <meta name="robots" content="all">
 
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="canonical" href="http://wangwenshan.com/">
-  <link rel="alternate" type="application/atom+xml" title="Wenshan's Website" href="http://wangwenshan.com/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Wenshan Wang" href="http://wangwenshan.com/feed.xml" />
 
   
     <link rel="shortcut icon" type="image/x-icon" href="/image/ico_brain.ico">
   
  
 </head>
-
+ -->
 
   <body>
 
@@ -31,28 +33,18 @@
       <img src="image/happy_mid.jpg"  alt="logo" />
       <img src="/image/happy_mid.jpg"  alt="logo" />
    </div> -->
-  <link rel="stylesheet" href="/css/main.css">
+ <link rel="stylesheet" href="/css/style.css">
 
-  <div class="wrapper-sitehead">
-    <div class="container">
-      <header class="sitehead clearfix">
-        <a href="/" class="site-avatar"><img src="/image/happy_mid.jpg" /></a>
+    <h1 class="site-title"><a href="/">Wenshan Wang</a></h1>
+    <h2>Welcome to Wenshan's website.  You can find her latest research interests and some drivels as well.
+</h2>
+    <!-- <nav>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+    </nav> -->
+  </header>
 
-        <div class="site-info">
-          <h1 class="site-name"><a href="/">Wenshan's Website</a></h1>
-          <p class="site-description">Welcome to Wenshan's website.  You can find her latest research interests and some drivels as well.
-</p>
-        </div>
-
-        <nav>
-          <a href="/blog">Blog</a>
-          <a href="/about">About</a>
-        </nav>
-      </header>
-    </div>
-  </div>
-
-  <!--  <a class="site-title" href="/">Wenshan's Website</a>
+  <!--  <a class="site-title" href="/">Wenshan Wang</a>
  
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -75,10 +67,6 @@
         
           
         
-          
-        
-          
-        
       </div>
       
     </nav> -->
@@ -88,13 +76,24 @@
 </header>
 
 
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="home">
-  <p>I have an obsessive interest in understanding intelligence. My research interests is on reinforcement learning and deep neural nets. I'd like to develop an end to end algorithm for robot perception, control and actuation based on reinforcement deep neural nets.  </p>
+    <div class="page-wrapper">
+      <div class="home">
+  <div class="sidebar">
+      <div class="navigation">
+	<ul>
+		<li><a href="#education">Education</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="#publication">Publication</a></li>
+		<li><a href="#rewards">Rewards</a></li>
+	</ul>
+</div>
+  </div>
 
-  <div class = "educations">
-  <h1 class="education-head">Education</h1>
+  <div class="preamble"><p>I have an obsessive interest in understanding intelligence. My research interests is on reinforcement learning and deep neural networks. I'd like to develop an end to end algorithm for robot perception, control and actuation based on reinforcement deep neural nets.  </p> </div>
+  <div class="supporting">
+    <div class="odd">
+      <div class = "educations" id="educations">
+  <h3 class="education-head">Education</h3>
 
   <ul class = "education-list">
     <li>
@@ -111,9 +110,11 @@
   </ul>
     
 </div>
-
-  <div class = "projects">
-  <h1 class="project-head">Project Experiences</h1>
+    </div>
+    <div class="even">
+      <div class="even-wrapper">
+      <div class = "projects" id="projects">
+  <h3 class="project-head">Project Experiences</h3>
     <ul class = "project-list">
       <li>
         <div class = "project-name" >Deep learning for object recognition and voice recognition, internship at Pico China Ltd. (2016-2017)</div>
@@ -148,9 +149,11 @@
       </li>
     </ul>
 </div>
-
-  <div class = "publications">
-  <h1 class="publication-head">Publications</h1>
+    </div>
+    </div>
+    <div class="odd">
+      <div class = "publications" id="publications">
+  <h3 class="publication-head">Publications</h3>
 
   <ol class = "publication-list">
     <li>
@@ -184,9 +187,11 @@
   </ol>
     
 </div>
-
-  <div class = "rewards">
-  <h1 class="reward-head">Honors and Awards</h1>
+    </div>
+    <div class="even">
+      <div class="even-wrapper">
+      <div class = "rewards" id=rewards>
+  <h3 class="reward-head">Honors and Awards</h3>
 
   <ul class = "reward-list">
     <li>
@@ -231,6 +236,13 @@
   </ul>
     
 </div>
+     </div>
+   </div>
+  </div>
+
+  <div class="epilogue">
+      <p>For more information, please contact me by <a href="mailto:amigo@sjtu.edu.cn">email</a></p>
+  </div>
 
  <!--  <ul class="post-list">
     
@@ -252,13 +264,12 @@
     
   </ul> -->
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+  <!--p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p-->
 
 </div>
 
-      </div>
     </div>
-
+ 
     <footer class="site-footer">
 
   <div class="wrapper">
@@ -279,7 +290,7 @@
 
 
 
-<!-- Analytics End -->
+<!-- Analytics End --> 
 
   </body>
 
