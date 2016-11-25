@@ -42,7 +42,7 @@ header {
   height: 170px;
   padding: 20px 0 70px 0;
 
-   background: #151b42 50% 0 url(../image/shooter.jpg) no-repeat; /* old IE fallback */
+  background: #151b42 50% 0 url(../image/shooter.jpg) no-repeat; /* old IE fallback */
 
   background-attachment: scroll;
   background-position: left top;
@@ -54,6 +54,7 @@ header {
 
 
 h1, h2 {
+  width: 100%;
   padding-left: 10%;
   margin: 0;
   color: #fff;
@@ -61,17 +62,29 @@ h1, h2 {
   z-index: 3;
 }
 
-h1 {
-    padding-top: 3%;
+h1 .title-en {
+  font-family: 'Julius Sans One', sans-serif;
+  position: relative;
+  float: left;
+}
+
+h1 .title-cn {
+  padding-top: 15px;
+  padding-left: 10px;
+/*  font-family: "KaiTi_GB2312","Microsoft YaHei";*/
+  font-size: 0.5em; 
+  position: relative;
+  float: left;
+  bottom:0px;
+  vertical-align: bottom;
 }
 
 h1 a{
   color: #fff;
   padding-top: 10%;
   padding-left: 0px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   border-bottom: none;
-  font-family: 'Julius Sans One', sans-serif;
   font-size: 1.7em;
   text-transform: uppercase;
 }
@@ -82,7 +95,6 @@ h1 a:hover, h1 a:focus { /*todo*/
   padding-left: 0px;
   padding-bottom: 5px;
   border-bottom: none;
-  font-family: 'Julius Sans One', sans-serif;
   font-size: 1.73em;
   text-transform: uppercase;
 }
@@ -94,6 +106,8 @@ h2 {
   border-top: none;
   color: rgba(255,255,255,0.6);
   font-size: 1.3em;
+  position: relative;
+  float: left;
   /*font-style: italic;*/
 }
 
@@ -353,7 +367,7 @@ footer a::before {
 
 
 /* high-res CSS */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
   body {
 
     background: #ffffff;
