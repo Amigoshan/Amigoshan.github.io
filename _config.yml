@@ -10,6 +10,7 @@ url: "http://wangwenshan.com" # the base hostname & protocol for your site
 github_username:  Amigoshan
 favicon: "image/ico_brain.ico"
 me-img: "image/happy_mid.jpg"
+paper-dir: "downloads/paper"
 # Build settings
 markdown: kramdown
 
