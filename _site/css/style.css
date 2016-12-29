@@ -72,7 +72,7 @@ h1 .title-cn {
   padding-top: 15px;
   padding-left: 10px;
 /*  font-family: "KaiTi_GB2312","Microsoft YaHei";*/
-  font-size: 0.5em; 
+  font-size: 0.6em; 
   position: relative;
   float: left;
   bottom:0px;
@@ -132,9 +132,7 @@ ul , ol{
   width: 80%;
   margin: 0 auto;
   font-size: 1.2em;
-}
-
-.preamble {
+  line-height: 1.7em;
   padding-top: 1.5em;
 }
 
@@ -164,7 +162,7 @@ ul , ol{
   margin: 0;
 }
 
-.supporting ul, .supporting ol {
+.supporting ul, .supporting ol, .project-list {
   width: 100%;
   padding-left: 13%;
   padding-right: 7%;
@@ -172,17 +170,45 @@ ul , ol{
   padding-bottom: 0.5em;
   margin: 0;
 }
-/*.rewards {
-  padding-bottom: 3em;
-  margin-bottom: 3em;
-}
-.even h3 {
-  margin-top: 0;
-}
-.even p {
-  margin-bottom: 0;
-}*/
 
+/* education and project sections */
+.university-name, .project-name {
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.project-item::after {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.project-image {
+  float: left;
+  width: 20%;
+  margin: 10px 10px 10px 10px;
+}
+
+.project-content {
+  float: left;
+  width: 73%;
+}
+
+.project-content ul{
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 7%;
+  padding-top: 0.2em;
+  padding-bottom: 0.5em;
+  margin: 0;
+}
+
+/*.project-name::before {
+  content: "* ";
+  font-weight: bold;
+}*/
 
 /* sidebar base styles */
 .sidebar {
@@ -353,7 +379,7 @@ footer a::before {
 }
 
 
-/* mid-res CSS */
+/* mid-res CSS 
 @media only screen and (max-width: 1132px) {
   header {
     border-top: solid 10px rgba(19, 42, 71, 0.9);
@@ -361,7 +387,7 @@ footer a::before {
   p, li {
     font-size: 1.2em;
   }
-}
+}*/
 
 
 
@@ -446,14 +472,22 @@ footer a::before {
 
   }
 
-   .supporting ul, .supporting ol {
+   .supporting ul, .supporting ol, .project-list {
     width: 100%;
-    padding-left: 27%;
+    padding-left: 25%;
     padding-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .project-content ul{
+    width: 100%;
+    padding-left: 17px;
+    padding-right: 7%;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    margin: 0;
+  }
 
   .even-wrapper{
     width: 100%;
