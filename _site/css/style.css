@@ -137,7 +137,7 @@ ul , ol{
   position: relative;
 }
 .preamble {
-  width: 80%;
+/*  width: 80%;*/
   margin: 0 auto;
   font-size: 1.2em;
   line-height: 1.7em;
@@ -152,14 +152,6 @@ ul , ol{
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*.odd, .even {
-  width: 100%;
-  padding-left: 0%;
-  padding-right: 0%;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin: 0;
-}*/
 
 .supporting h3 {
   width: 100%;
@@ -206,10 +198,14 @@ ul , ol{
 
 .project-item::after {
   width: 100%;
-  margin: 10px 0 20px 0;
+  margin: 10px 0px 10px 0;
   content: "";
   clear: both;
   display: table;
+}
+
+.project-list {
+  margin: 10px 0 0 0;
 }
 
 .project-image {
@@ -311,52 +307,13 @@ ul , ol{
 
 
 /* main footer */
-footer {
+footer .wrapper {
   clear: both;
   padding: 3em 10%;
   color: #fff;
   background: #132547;
   text-align: center;
 }
-footer a {
-  display: inline-block;
-  overflow: hidden;
-  width: 40px;
-  height: 40px;
-  padding: 40px 0 0 0;
-  margin: 0 0.5em;
-  position: relative;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
-  -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
-  transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
-}
-footer a:hover, footer a:focus {
-  color: rgba(255, 255, 255, 0.3);
-  text-decoration: none;
-}
-footer a:visited {
-  color: rgba(255, 255, 255, 0.2);
-}
-footer a::before {
-  display: block;
-  position: absolute;
-  top: 3px;
-  left: 0;
-  overflow: visible;
-  font-size: 36px;
-  text-indent: 0;
-
-  /* icomoon.io defaults */
-  font-family: 'verdemoderna';
-  speak: none;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-
 
 
 /*--------------------------------*/
@@ -374,11 +331,6 @@ footer a::before {
 /* low-res CSS */
 @media only screen and (max-width: 600px) {
 
-  /* these download links make approximately zero sense
-     on a phone without a user-accessible file system. */
-  .preamble p:last-child {
-    display: none;
-  }
   header {
     height: 100px;
     padding: 0 0 0 0;
@@ -486,13 +438,6 @@ footer a::before {
     padding: 5px 0 60px 70px;
   }
 
-  /* main layout blocks */
-  .preamble {
-    float: right;
-    clear: right;
-    width: 87%;
-    padding: 2em 5% 1em 10%;
-  }
 
   .supporting h3 {
     padding-left: 0%;
@@ -568,40 +513,7 @@ footer a::before {
 
 }
 
-
-
-
-
-
-
-@media only screen and (min-width: 1150px) {
-  /* page footer */
-  footer a {
-    width: 76px;
-    height: 76px;
-    padding: 76px 0 0 0;
-    margin: 0 3em;
-  }
-  footer a::before {
-    font-size: 72px;
-  }
+/*These are for subpages with detailed info*/
+.content-wapper {
+  padding-left: 25%;
 }
-
-/*    .epilogure {
-        background-image: url(../image/flowers.jpg);
-        background-size: cover;
-    }
-
-}*/
-
-/* icon fonts */
-@font-face {
-	font-family: 'verdemoderna';
-	src:url('verdemoderna.eot');
-	src:url('verdemoderna.eot?#iefix') format('embedded-opentype'),
-		url('verdemoderna.woff') format('woff'),
-		url('verdemoderna.ttf') format('truetype'),
-		url('verdemoderna.svg#verdemoderna') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}                                                                                                               /* 1000 lines?! */
