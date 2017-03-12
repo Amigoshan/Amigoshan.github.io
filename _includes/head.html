@@ -8,11 +8,11 @@
   <meta name="author" content="Amigo">
   <meta name="robots" content="all">
 
-  <link rel="stylesheet" href="{{ "css/style.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}{{ "/css/style.css" }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   {% if site.favicon %}
-    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}{{ site.favicon }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/{{ site.favicon }}">
   {% endif %}
  
 </head>

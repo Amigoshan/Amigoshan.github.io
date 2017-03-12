@@ -12,11 +12,11 @@
   <meta name="author" content="Amigo">
   <meta name="robots" content="all">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="canonical" href="http://localhost:4000/">
 
   
-    <link rel="shortcut icon" type="image/x-icon" href="image/ico_brain.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/image/ico_brain.ico">
   
  
 </head>
@@ -26,77 +26,46 @@
 
     <header class="site-header">
 
-  <!-- <div class="wrapper">
-
-    <div style="width:120px; height:120px; border-radius:50%; overflow:hidden;">
-      <img src="image/happy_mid.jpg"  alt="logo" />
-      <img src="/image/happy_mid.jpg"  alt="logo" />
-   </div> -->
- <link rel="stylesheet" href="/css/style.css">
-
     <h1 class="site-title"><a href="/"><div class='title-en'>Wenshan Wang |  </div> <div class='title-cn'>王雯珊</div> </a></h1>
     <h2>Welcome to Wenshan's website.  You can find her latest research interests and some drivels as well.
 </h2>
-    <!-- <nav>
-      <a href="/blog">Blog</a>
-      <a href="/about">About</a>
-    </nav> -->
-  </header>
-
-  <!--  <a class="site-title" href="/">Wenshan Wang</a>
  
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        
-          
-          <a class="page-link" href="/about/">About</a>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
-      
-    </nav> -->
-
-  </div>
-
 </header>
 
 
     <div class="page-wrapper">
-      <div class="home">
-  <div class="sidebar">
-      <div class="navigation">
+
+      <div class="sidebar">
+        <div class="navigation">
 	<ul>
-		<li><a href="#education">Education</a></li>
-		<li><a href="#projects">Projects</a></li>
-		<li><a href="#publication">Publication</a></li>
-		<li><a href="#rewards">Rewards</a></li>
+		<li><a href="/#educations">Education</a></li>
+		<li><a href="/#projects">Projects</a></li>
+		<li><a href="/#publication">Publication</a></li>
+		<li><a href="/#awards">awards</a></li>
 	</ul>
 </div>
-  </div>
+      </div>
 
-  <div class="photo"></div>
+      <div class="home">
 
   <div class="odd">
-    <div class="supporting">
-      <img src="image/photo.jpg"  />
-      <div class="preamble"><p>I have an obsessive interest in <b>understanding intelligence</b>. My research interests is on <b>reinforcement learning</b> and <b>deep neural networks</b>. I'd like to develop an end to end algorithm for robot perception, control and actuation based on reinforcement deep neural networks.  </p></div>
+    <div class="supporting"> <div class="info-wapper">
+  <div class="briefinfo">
+    <h3>Wenshan Wang</h3>
+    <div class="positions">
+        Shanghai Jiao Tong University <br>
+        Microsoft Research Asia
     </div>
+    <div class='infolist'>
+      Email: shanshan1370 [at] sina [dot] com<br>
+      Major: Robotics<br>
+      <a href="">Curriculum Vitae</a> | <a href="">Research Statement</a> <br>
+    </div>
+  </div>
+  <div class="photo"><img src="image/photo.jpg"  /></div>
+</div>
+<div class="preamble"><p>I have an obsessive interest in <b>understanding intelligence</b>. My research interests is on <b>reinforcement learning</b> and <b>deep neural networks</b>. I'd like to develop an end to end algorithm for robot perception, control and actuation based on reinforcement deep neural networks.  </p></div>
+ </div>
   </div>
   <div class="even">
     <div class="even-wrapper">
@@ -107,7 +76,7 @@
     <li>
       <div class = "university-name" >SHANGHAI JIAO TONG UNIVERSITY, Dr. En</div>
       <div class = "uviversity-description">Major in Mechatronics, Research Institute of Robotics</div>
-     <div class = "uviversity-description">Thesis: Task Planning for Ubiquitous Robotic Systems in Complex Environments </div>
+     <div class = "uviversity-description"><a href="/subpages/thesis_abstract.html">Thesis: Task Planning for Ubiquitous Robotic Systems in Complex Environments </a></div>
     </li>
 
     <li>
@@ -127,16 +96,17 @@
 
       <div class = "project-item">
         <!--div class = "project-content"-->
-          <div class = "project-name" ><a href="#">Deep learning for robotic mapping and navigation (2017)</a></div>
-          <div class = "project-source">Internship at Microsoft Research Asia. </div>
+          <div class = "project-name" >Deep learning for robot mapping and navigation (2017)</div>
+          <div class = "project-source">Internship at Microsoft Research Asia </div>
           <ul class = "project-description">
-            <li>Developed deep learning algorithms for the object recognition and speech recognition based on open source frameworks, such as Caffe and TensorFlow.</li>
+            <li>Develop robot mapping algorithm using monocular camera based on deep neural networks.</li>
+            <li>Develop robot navigation algorithm based on reinforcement learning and predictive neural model.</li>
           </ul>
         <!--/div-->
        </div>
 
       <div class = "project-item">
-        <div class = "project-image"><img src="image/dnn.png"  /> </div>
+        <div class = "project-image"><img src="image/tag_dnn.png"  /> </div>
         <div class = "project-content">
           <div class = "project-name" ><a href="/subpages/projects/dnn_pico.html">Deep learning for object recognition and voice recognition (2016-2017)</a></div>
           <div class = "project-source">Internship at Pico China Ltd. </div>
@@ -147,9 +117,9 @@
        </div>
 
       <div class = "project-item">
-        <div class = "project-image"><img src="image/ubibot.png"  /> </div>
+        <div class = "project-image"><img src="image/tag_ubibot.png"  /> </div>
         <div class = "project-content">
-          <div class = "project-name" >The Study of Ubiquitous Robotic Technology and its Software Modules (2014-2015)</div>
+          <div class = "project-name" ><a href="/subpages/projects/ubibot.html">The Study of Ubiquitous Robotic Technology and its Software Modules (2014-2015)</a></div>
           <div class = "project-source">Cooperated with Yaskawa Electrical Corporation </div>
           <ul class = "project-description">
             <li>Designed and implemented the ubiquitous robotic system based on Robot Technology Middleware (RTM) and Robot Operating System (ROS).</li>
@@ -165,26 +135,36 @@
       </div>
 
       <div class = "project-item">
-        <div class = "project-name" >Team leader of the standard platform league of Robocup soccer contest (2013-2014) </div>
-        <ul class = "project-description">
-          <li>In charge of multi-agent coordination, task planning based on hierarchical finite state machine. </li>
-        </ul>
+        <div class = "project-image"><img src="image/tag_robocup.jpg"  /> </div>
+        <div class = "project-content">
+          <div class = "project-name" >Standard platform league of Robocup soccer contest (2013-2014) </div>
+          <ul class = "project-description">
+            <li>Team leader.</li>
+            <li>In charge of multi-agent coordination, task planning based on hierarchical finite state machine. </li>
+          </ul>
+        </div>
       </div>
 
       <div class = "project-item">
-        <div class = "project-name" >The Study of Programming Environment for Intelligent Robots (2012-2013)</div>
-        <div class = "project-source">Cooperated with Yaskawa Electrical Corporation </div>
-        <ul class = "project-description">
-        <li>Proposed an algorithm for auto-creation of topological map with a probabilistic map build with the laser sensor. </li>
-        <li>Developed a robot navigation method for multi-layered environment based on A* algorithm. </li>
-        </ul>
+        <div class = "project-image"><img src="image/tag_topomap.png"  /> </div>
+        <div class = "project-content">
+          <div class = "project-name" ><a href="/subpages/projects/topomap.html">The Study of Programming Environment for Intelligent Robots (2012-2013)</a></div>
+          <div class = "project-source">Cooperated with Yaskawa Electrical Corporation </div>
+          <ul class = "project-description">
+          <li>Proposed an algorithm for auto-creation of topological map with a probabilistic map build with the laser sensor. </li>
+          <li>Developed a robot navigation method for multi-layered environment based on A* algorithm. </li>
+          </ul>
+        </div>
       </div>
 
       <div class = "project-item">
-        <div class = "project-name" >Development of Graphical Programming Environment for Educational Humanoid Robot (2009-2011)</div>
-        <ul class = "project-description">
-          <li>Developed a graphical programming and simulation environment with Java3D for humanoid robot motion simulation and teaching. </li>
-        </ul>
+        <div class = "project-image"><img src="image/tag_biorobo.png"  /> </div>
+        <div class = "project-content">
+          <div class = "project-name" ><a href="/subpages/projects/biorobo.html">Development of Graphical Programming Environment for Educational Humanoid Robot (2009-2011)</a></div>
+          <ul class = "project-description">
+            <li>Developed a graphical programming and simulation environment with Java3D for humanoid robot motion simulation and teaching. </li>
+          </ul>
+        </div>
       </div>
     </div>
 </div> </div>
@@ -229,48 +209,48 @@
     </div>
   </div>
   <div class="odd">
-    <div class="supporting"> <div class = "rewards" id=rewards>
-  <h3 class="reward-head">Honors and Awards</h3>
+    <div class="supporting"> <div class = "awards" id=awards>
+  <h3 class="award-head">Honors and Awards</h3>
 
-  <ul class = "reward-list">
+  <ul class = "award-list">
     <li>
-      <div class = "reward-name" >Outstanding winner in Standard Platform League of Robocup China Open (Team leader), Oct. 2014</div>
-      <div class = "reward-description">Framework design, behavior control and multi-robot cooperation. </div>
+      <div class = "award-name" ><a href="/subpages/awards/robocup2014.html">Outstanding winner in Standard Platform League of <b>Robocup China Open (Team leader)</b>, Oct. 2014</a></div>
+      <div class = "award-description">Framework design, behavior control and multi-robot cooperation. </div>
     </li>
 
     <li>
-      <div class = "reward-name" >First Prize in Standard Platform League of Robocup China Open (Team leader), Oct. 2013</div>
-      <div class = "reward-description">Framework design, behavior control and multi-robot cooperation</div>
+      <div class = "award-name" ><a href="/subpages/awards/robocup2013.html">First Prize in Standard Platform League of <b>Robocup China Open (Team leader)</b>, Oct. 2013</a></div>
+      <div class = "award-description">Framework design, behavior control and multi-robot cooperation</div>
     </li>
 
     <li>
-      <div class = "reward-name" >Dr. scholarship for outstanding new student, Sept. 2011</div>
+      <div class = "award-name" >Dr. scholarship for <b>outstanding new student</b>, Sept. 2011</div>
     </li>
 
     <li>
-      <div class = "reward-name" >Second Prize in Middle Size Robot League of Robocup China Open (Team award), Dec. 2009</div>
-      <div class = "reward-description">Behavior control. </div>
+      <div class = "award-name" ><a href="/subpages/awards/robocup2009.html">Second Prize in Middle Size Robot League of <b>Robocup China Open (Team award)</b>, Dec. 2009</a></div>
+      <div class = "award-description">Behavior control. </div>
     </li>
 
     <li>
-      <div class = "reward-name" >Second prize in the International Collegiate Mathematics Modeling Contest, Dec. 2008</div>
+      <div class = "award-name" >Second prize in the <b>International Collegiate Mathematics Modeling Contest</b>, Dec. 2008</div>
     </li>
 
     <li>
-      <div class = "reward-name" >Third Prize in National Collegiate Smart Car Contest,  Aug. 2008</div>
-      <div class = "reward-description">Computer vision and motor control</div>
+      <div class = "award-name" >Third Prize in <b>National Collegiate Smart Car Contest</b>,  Aug. 2008</div>
+      <div class = "award-description">Computer vision and motor control</div>
     </li>
 
     <li>
-      <div class = "reward-name" >Bronze Medal in ACM Programming Contest (Asia Site), Nov. 2007</div>
+      <div class = "award-name" >Bronze Medal in <b>ACM Programming Contest (Asia Site)</b>, Nov. 2007</div>
     </li>
 
     <li>
-      <div class = "reward-name" >Second prize in the National Collegiate Mathematics Modeling Contest (Shanghai Site), Sept. 2007</div>
+      <div class = "award-name" >Second prize in the <b>National Collegiate Mathematics Modeling Contest (Shanghai Site)</b>, Sept. 2007</div>
     </li>
 
     <li>
-      <div class = "reward-name" >School Outstanding Student, 2005, 2006</div>
+      <div class = "award-name" >School Outstanding Student, 2005, 2006</div>
     </li>
   </ul>
     
@@ -311,7 +291,7 @@
 
   <div class="wrapper">
 
-     © 2016 Amigo
+     © 2017 Amigo
  
   </div>
 

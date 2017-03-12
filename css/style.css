@@ -6,6 +6,7 @@
   --side_bar_color: rgba(240,255,255,0.37);
   --side_bar_head_color: rgba(187,199,223,0.37);
   --rgba_white: rgba(255,255,255,0);
+  --second_text_color: #a95741;
 }
 /* base CSS */
 * {
@@ -23,6 +24,7 @@ body {
   background: #fff;
   font-family: 'Libre Baskerville', sans-serif;
   font-size: 70%;
+
 }
 
 a {
@@ -129,19 +131,56 @@ h3 {
 
 ul , ol{
   margin: 0.5em 0;
-  line-height: 2;
 }
 
 
 .page-wrapper {
   position: relative;
+  line-height: 2;
 }
+
+.info-wapper::after {
+  width: 100%;
+  margin: 10px 0px 0px 0;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.briefinfo {
+  float: left;
+  width: 60%;
+}
+
+.positions {
+  font-size: 0.95em;
+  color: var(--second_text_color);
+  padding: 0px 0 0 20px;
+}
+
+.infolist {
+  font-size: 1.0em;
+  padding: 0px 0 0 20px;
+}
+
+
+.photo {
+  float: left;
+  width: 40%;
+
+}
+
+.photo img{
+  padding: 20px 0 0 10px;
+  width:93%;
+}
+
 .preamble {
 /*  width: 80%;*/
   margin: 0 auto;
   font-size: 1.2em;
   line-height: 1.7em;
-  padding-top: 1.5em;
+  padding-top: 0.5em;
 }
 
 /* coloured cutoff */
@@ -172,11 +211,11 @@ ul , ol{
 }
 
 /* main sections */
-.publications a {
-  color: #0d718c; /*#0d8ba1; link text*/
-}
+/*.supporting a {
+  color: #0d718c; 
+}*/
 
-.publications a:hover {
+.supporting a:hover {
   color: #1da1bc; /*#0d8ba1; link text*/
   text-decoration: underline;
 }
@@ -184,16 +223,6 @@ ul , ol{
 .university-name, .project-name{
   width: 100%;
   font-size: 1.3em;
-}
-
-.project-name a {
-  color: var(--main_text_color);
-
-}
-
-.project-name a:hover {
-  color: #204060;
-  text-decoration: underline;
 }
 
 .project-item::after {
@@ -205,7 +234,7 @@ ul , ol{
 }
 
 .project-list {
-  margin: 10px 0 0 0;
+  margin: 10px 0 0 20px;
 }
 
 .project-image {
@@ -214,13 +243,18 @@ ul , ol{
   margin: 10px 10px 10px 10px;
 }
 
+.project-image img {
+  width: 90%;
+  border-radius: 25px;
+}
+
 .project-content {
   float: left;
   width: 73%;
 }
 
 .project-source {
-  color: #a95741;
+  color: var(--second_text_color);
 }
 
 .project-content ul{
@@ -232,10 +266,13 @@ ul , ol{
   margin: 0;
 }
 
-/*.project-name::before {
-  content: "* ";
-  font-weight: bold;
-}*/
+.publications a {
+  color: var(--second_text_color);
+}
+
+.award-description {
+  color: var(--second_text_color);
+}
 
 /* sidebar base styles */
 .sidebar {
@@ -516,4 +553,10 @@ footer .wrapper {
 /*These are for subpages with detailed info*/
 .content-wapper {
   padding-left: 25%;
+  padding-right: 7%;
+
+}
+
+.centerimg {
+  padding-left: 10%;
 }
