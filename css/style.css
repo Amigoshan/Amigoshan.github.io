@@ -7,6 +7,7 @@
   --side_bar_head_color: rgba(187,199,223,0.37);
   --rgba_white: rgba(255,255,255,0);
   --second_text_color: #a95741;
+  --link_text_color: #3f5a8d;
 }
 /* base CSS */
 * {
@@ -32,6 +33,7 @@ a {
   -moz-transition: all  0.25s ease-out;
   transition: all  0.25s ease-out;
   text-decoration: none;
+  color: var(--main_text_color);
 }
 
 /*a:visited {
@@ -163,7 +165,9 @@ ul , ol{
   padding: 0px 0 0 20px;
 }
 
-
+.infolist a {
+  color: var(--link_text_color);
+}
 .photo {
   float: left;
   width: 40%;
