@@ -12,6 +12,7 @@ github_username:  Amigoshan
 favicon: "image/ico_brain.ico"
 me-img: "image/happy_mid.jpg"
 paper-dir: "downloads/paper"
+resource-dir: "downloads/resources"
 # Build settings
 markdown: kramdown
 
