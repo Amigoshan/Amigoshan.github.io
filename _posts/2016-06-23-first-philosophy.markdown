@@ -2,7 +2,9 @@
 layout: post
 title:  "演员"
 date:   2016-06-23 23:31:13
-categories: jekyll update
+categories: murmurs
+meta: 从神经科学看生命的意义
+visible: true
 ---
 从神经科学看，追寻人生意义是厉害的大脑皮层的副作用，意识和灵魂都是幻觉。人不应该问人生有什么意义，非要答案的话就是没有意义。
 

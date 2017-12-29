@@ -18,8 +18,8 @@ markdown: kramdown
 
 
 comments: true
-#disqus-shortname: "wenshan"
-duoshuo-shortname: "wenshan"
+disqus-shortname: "wenshan"
+# duoshuo-shortname: "wenshan"
 
 cnzz_tongji:
   enable: true

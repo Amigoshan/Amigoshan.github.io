@@ -12,6 +12,7 @@ The following structure is designed for stereo matching. This network was traine
 
 Here are some of the results on KITTI dataset.
 
-![example]({{ site.baseurl }}/image/kitti-17.png){: .centerimg}
-
-![example]({{ site.baseurl }}/image/kitti-21.png){: .centerimg}
+<video id="video" controls="" preload="none" poster="{{ site.baseurl }}/image/kitti-17.png">
+      <source id="mp4" src="{{ site.baseurl }}/video/driving.mp4" type="video/mp4">
+      <p>Your user agent does not support the HTML5 Video element.</p>
+</video>
