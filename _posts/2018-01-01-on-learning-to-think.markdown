@@ -20,14 +20,12 @@ Predictive RNN world model + RL controller
 ### 架构和算法：
 系统主要有两个部分组成M和C。
 1.	M的主要目标是compress and save。
-输入C(t)、M(t)、sense(t)，输出sense_pred(t+1)。
-
-对应于save，M要最小化predictive error；对应于compress，M要最小化使用的计算资源，例如尽量减少non-zero的weights。
+    输入C(t)、M(t)、sense(t)，输出sense_pred(t+1)。
+    对应于save，M要最小化predictive error；对应于compress，M要最小化使用的计算资源，例如尽量减少non-zero的weights。
 
 2.	C的主要目标是最大化external和intrinsic rewards。
-输入C(t)、M(t)、sense(t)，输出out(t)。
-
-Reward分为external和intrinsic两种，可以对应于YY总结的生理需求的reward和美学reward。生理需求reward包括吃喝、社交、疼痛、财富等等；美学reward也就是Schmidhuber总结的对world model的提升。
+    输入C(t)、M(t)、sense(t)，输出out(t)。
+    Reward分为external和intrinsic两种，可以对应于YY总结的生理需求的reward和美学reward。生理需求reward包括吃喝、社交、疼痛、财富等等；美学reward也就是Schmidhuber总结的对world model的提升。
 
 C和M之间可以交互，M是一个复杂庞大的模块，通过利用M的信息，C可以只用很简单的架构。
 
