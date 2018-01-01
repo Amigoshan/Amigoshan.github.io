@@ -234,7 +234,7 @@ ul , ol{
   text-decoration: underline;
 }
 
-.university-name, .project-name, .post-title {
+.university-name, .project-name {
   width: 100%;
   font-size: 1.3em;
 }
@@ -609,3 +609,6 @@ footer .wrapper {
   color: #3f5a9d;
 }
 
+h4 {
+  font-size: 1.5em;
+}
